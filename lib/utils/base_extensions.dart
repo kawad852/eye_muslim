@@ -26,6 +26,10 @@ extension ThemeExtension on BuildContext {
   ColorPalette get colorPalette => ColorPalette.of(this);
 }
 
+extension MediaQueryExtension on BuildContext {
+  Size get mediaQuery => MediaQuery.sizeOf(this);
+}
+
 extension CommonExtensions on BuildContext {
   void unFocusKeyboard() => FocusManager.instance.primaryFocus?.unfocus();
   double get systemButtonHeight => Theme.of(this).buttonTheme.height;
