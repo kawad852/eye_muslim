@@ -1,0 +1,41 @@
+class MyIcons {
+  static const String _path = 'assets/icons/';
+
+  static const String user = '${_path}user.svg';
+  static const String lock = '${_path}lock.svg';
+  static const String eye = '${_path}eye.svg';
+  static const String eyeOff = '${_path}eye_off.svg';
+  static const String send = '${_path}send.svg';
+  static const String bell = '${_path}bell.svg';
+  static const String plane = '${_path}plane.svg';
+  static const String bed = '${_path}bed.svg';
+  static const String car = '${_path}car.svg';
+  static const String home = '${_path}home.svg';
+  static const String checkDoc = '${_path}check-doc.svg';
+  static const String check = '${_path}check.svg';
+  static const String circle = '${_path}circle.svg';
+  static const String info = '${_path}info.svg';
+  static const String calendar = '${_path}calendar.svg';
+  static const String userBook = '${_path}user_book.svg';
+  static const String marker = '${_path}marker.svg';
+  static const String dot = '${_path}dot.svg';
+  static const String edit = '${_path}edit.svg';
+  static const String examinationMark = '${_path}examination_mark.svg';
+  static const String favoriteFilled = '${_path}favorite-filled.svg';
+  static const String filter = '${_path}filter.svg';
+  static const String map = '${_path}map.svg';
+  static const String close = '${_path}close.svg';
+  static const String arrowForward = '${_path}arrow_forward.svg';
+  static const String note = '${_path}note.svg';
+  static const String arrowForwardAndroid = '${_path}arrow_forward_android.svg';
+  static const String receiptCheck = '${_path}receipt_check.svg';
+  static const String mail = '${_path}mail.svg';
+  static const String phone = '${_path}phone.svg';
+  static const String roomDoor = '${_path}room_door.svg';
+  static const String dish = '${_path}dish.svg';
+  static const String userHair = '${_path}user_hair.svg';
+  static const String checkIn = '${_path}checkIn.svg';
+  static const String checkOut = '${_path}checkOut.svg';
+  static const String moon = '${_path}moon.svg';
+  static const String message = '${_path}message.svg';
+}
