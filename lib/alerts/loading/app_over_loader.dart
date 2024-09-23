@@ -1,5 +1,7 @@
+import 'package:eye_muslim/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:eye_muslim/utils/base_extensions.dart';
 
 class AppOverlayLoader {
   static void show({
