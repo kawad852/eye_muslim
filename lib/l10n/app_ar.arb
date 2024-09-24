@@ -34,6 +34,26 @@
   "quran":"القرآن",
   "times":"الأوقات",
   "biography":"السيرة",
-  "mosques":"المساجد"
- 
+  "mosques":"المساجد",
+  "fajr":"الفجر",
+  "noon":"الظهر",
+  "asr":"العصر",
+  "maghrib":"المغرب",
+  "isha":"العشاء",
+  "didYouPray":"هل صليت صلاة {prayer}؟",
+  "yes":"نعم",
+  "no":"لا",
+  "callPrayerHasRaised":"رفع الأذان منذ",
+  "useAppWithoutAds":"هل ترغب في استخدام التطبيق من دون إعلانات اشترك الآن فقط بـ {value}$ لمدة شهر واستمتع باستخدام التطبيق بدون إعلانات",
+  "subscriptionFor":"إشتراك بـ {value}$ فقط",
+  "wePresentToYou":"نقدم لكم",
+  "remembrancesAndSupplications":"الأذكار والأدعية",
+  "qiblaDirection":"اتجاه القبلة",
+  "rosary":"المسبحة",
+  "namesOfGod":"أسماء الله",
+  "islamicLibrary":"المكتبة الاسلامية",
+  "hijriCalendar":"التقويم الهجري",
+  "ramadanMonth":"شهر رمضان",
+  "interpretationQuran":"تفسير القرآن",
+  "moreComingSoon":"قريبا المزيد"
 }

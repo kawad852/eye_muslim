@@ -29,7 +29,7 @@ class StretchedButton extends StatelessWidget {
             minimumSize: const Size(600, 48),
             backgroundColor: backgroundColor,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(MyTheme.radiusS),
+              borderRadius: BorderRadius.circular(MyTheme.radiusSecondary),
             ),
           ),
           child: child,

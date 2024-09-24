@@ -5,7 +5,7 @@ import 'package:eye_muslim/screens/mosques/mosques_screen.dart';
 import 'package:eye_muslim/screens/quran/quran_screen.dart';
 import 'package:eye_muslim/screens/times/times_screen.dart';
 import 'package:eye_muslim/utils/base_extensions.dart';
-import 'package:eye_muslim/utils/my_icons.dart';
+import 'package:eye_muslim/utils/my_images.dart';
 import 'package:eye_muslim/utils/my_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -25,11 +25,11 @@ class _AppNavBarState extends State<AppNavBar> {
   //late AuthProvider authProvider;
 
   final items = [
-    MyIcons.home,
-    MyIcons.quran,
-    MyIcons.times,
-    MyIcons.hadith,
-    MyIcons.mosques,
+    MyImages.home,
+    MyImages.quran,
+    MyImages.times,
+    MyImages.hadith,
+    MyImages.mosques,
   ];
 
   List<String> _getTitle(BuildContext context) {
@@ -91,8 +91,8 @@ class _AppNavBarState extends State<AppNavBar> {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(MyTheme.radiusS),
-            topRight: Radius.circular(MyTheme.radiusS),
+            topLeft: Radius.circular(MyTheme.radiusSecondary),
+            topRight: Radius.circular(MyTheme.radiusSecondary),
           ),
           boxShadow: [
             BoxShadow(

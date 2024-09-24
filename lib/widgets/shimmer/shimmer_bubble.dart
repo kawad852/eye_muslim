@@ -12,7 +12,7 @@ class LoadingBubble extends StatelessWidget {
   const LoadingBubble({
     super.key,
     this.width,
-    this.radius = MyTheme.radiusS,
+    this.radius = MyTheme.radiusSecondary,
     this.height,
     this.padding,
     this.margin,

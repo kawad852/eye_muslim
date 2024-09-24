@@ -1,6 +1,5 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:eye_muslim/utils/base_extensions.dart';
-import 'package:eye_muslim/widgets/custom_svg.dart';
 import 'package:flutter/material.dart';
 
 class NavBarItem extends StatelessWidget {
@@ -52,11 +51,10 @@ class NavBarItem extends StatelessWidget {
                     indent: 10,
                   ),
                 Expanded(
-                  child: CustomSvg(
+                  child: Image.asset(
                     icon,
                     // height: 25,
                     width: width,
-                    color: Colors.red,
                   ),
                 ),
                 Expanded(

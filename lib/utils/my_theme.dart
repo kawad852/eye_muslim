@@ -2,34 +2,54 @@ import 'package:eye_muslim/utils/base_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-const kEditorBottomPadding = 24.0;
+const kEditorBottomPadding = 16.0;
+const kProductBubbleHeight = 70.0;
+const kBarLeadingWith = 250.0;
+const kBarCollapsedHeight = 220.0;
 
-class MyTheme { 
+class MyTheme {
+  static const Color primaryLightColor = Color(0xFF1A73E8);
+  static const Color secondaryLightColor = Color(0xFFFFCA28);
+  static const Color tertiaryLightColor = Color(0xFF1B3A57);
+
   static final String fontFamily = GoogleFonts.cairo().fontFamily!;
 
-  static const double radius6XL = 40;
-  static const double radius5XL = 38;
-  static const double radius4XL = 32;
-  static const double radius3XL = 28;
-  static const double radius2XL = 24;
-  static const double radiusXL = 20;
-  static const double radiusL = 16;
-  static const double radiusM = 12;
-  static const double radiusS = 8;
-  static const double radiusXS = 4;
-
-  static const _h1Style = TextStyle(fontSize: 32); // Headline Large
-  static const _h2Style = TextStyle(fontSize: 29); // Headline Medium
-  static const _h3Style = TextStyle(fontSize: 26); // Title Large
-  static const _h4Style = TextStyle(fontSize: 23); // Title Medium
-  static const _h5Style = TextStyle(fontSize: 20); // Title Small
-  static const _h6Style = TextStyle(fontSize: 18); // Body Large
-  static const _bodyStyle = TextStyle(fontSize: 16); // Body Medium
-  static const _captionStyle = TextStyle(fontSize: 14); // Label Large
-  static const _overLineStyle = TextStyle(fontSize: 13); // Label Medium
-  static const _labelSmallStyle = TextStyle(fontSize: 12); // Label Small
+  static const double radiusPrimary = 5;
+  static const double radiusSecondary = 10;
+  static const double radiusTertiary = 16;
 
   static bool isLightTheme(BuildContext context) => context.colorScheme.brightness == Brightness.light;
+
+  static InputDecorationTheme inputDecorationTheme(BuildContext context, ColorScheme colorScheme) => InputDecorationTheme(
+        filled: true,
+        isDense: true,
+        fillColor: context.colorPalette.greyECE,
+        hintStyle: TextStyle(
+          fontSize: 14,
+          color: context.colorPalette.greyECE,
+        ),
+        contentPadding: const EdgeInsetsDirectional.symmetric(horizontal: 5, vertical: 10).copyWith(start: 20),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: BorderSide(color: context.colorPalette.greyECE),
+        ),
+        disabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: BorderSide(color: context.colorPalette.greyECE),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: BorderSide(color: context.colorPalette.greyECE),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: BorderSide(color: colorScheme.error),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8),
+          borderSide: BorderSide(color: colorScheme.error),
+        ),
+      );
 
   ThemeData materialTheme(BuildContext context, ColorScheme colorScheme) {
     return ThemeData(
@@ -37,82 +57,31 @@ class MyTheme {
       fontFamily: fontFamily,
       colorScheme: colorScheme,
       appBarTheme: AppBarTheme(
-        centerTitle: false,
-        backgroundColor: colorScheme.primary,
-        foregroundColor: const Color(0xFFE6E8F4),
-        titleTextStyle: _h5Style.copyWith(
-          fontWeight: FontWeight.w300,
-          color: context.colorScheme.onPrimary,
+        color: colorScheme.background,
+      ),
+      listTileTheme: ListTileThemeData(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(radiusPrimary),
+        ),
+      ),
+      cardTheme: CardTheme(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
         ),
       ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
-          backgroundColor: colorScheme.primary,
-          foregroundColor: colorScheme.surface,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(radiusS),
-          ),
-          textStyle: _captionStyle.copyWith(
-            fontWeight: FontWeight.w500,
+            borderRadius: BorderRadius.circular(radiusPrimary),
           ),
         ),
       ),
-      dividerTheme: DividerThemeData(
-        color: colorScheme.outline,
+      bottomAppBarTheme: BottomAppBarTheme(
+        surfaceTintColor: colorScheme.background,
+        color: colorScheme.background,
+        elevation: 0,
       ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          foregroundColor: colorScheme.tertiary,
-          textStyle: _captionStyle.copyWith(
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-      ),
-      // cardTheme: CardTheme(
-      //   color: colorScheme.primaryContainer,
-      //   shadowColor: colorScheme.shadow,
-      // ),
-      inputDecorationTheme: InputDecorationTheme(
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(radiusS),
-          borderSide: BorderSide(color: colorScheme.outlineVariant),
-        ),
-        disabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(radiusS),
-          borderSide: BorderSide(color: colorScheme.outlineVariant),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(radiusS),
-          borderSide: BorderSide(color: colorScheme.outlineVariant),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(radiusS),
-          borderSide: BorderSide(color: colorScheme.error),
-        ),
-        focusedErrorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(radiusS),
-          borderSide: BorderSide(color: colorScheme.error),
-        ),
-      ),
-      textTheme: const TextTheme(
-        ///Headline
-        headlineLarge: _h1Style,
-        headlineMedium: _h2Style,
-
-        ///Title
-        titleLarge: _h3Style,
-        titleMedium: _h4Style,
-        titleSmall: _h5Style,
-
-        ///Body
-        bodyLarge: _h6Style,
-        bodyMedium: _bodyStyle,
-
-        ///Label
-        labelLarge: _captionStyle,
-        labelMedium: _overLineStyle,
-        labelSmall: _labelSmallStyle,
-      ),
+      inputDecorationTheme: inputDecorationTheme(context, colorScheme),
     );
   }
 }
