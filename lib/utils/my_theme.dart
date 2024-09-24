@@ -4,10 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 const kEditorBottomPadding = 24.0;
 
-class MyTheme {
-  static final String fontFamily = GoogleFonts.poppins(
-    fontWeight: FontWeight.w500,
-  ).fontFamily!;
+class MyTheme { 
+  static final String fontFamily = GoogleFonts.cairo().fontFamily!;
 
   static const double radius6XL = 40;
   static const double radius5XL = 38;

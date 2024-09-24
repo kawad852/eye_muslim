@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:eye_muslim/utils/base_extensions.dart';
 import 'package:eye_muslim/widgets/custom_svg.dart';
 import 'package:flutter/material.dart';
@@ -20,41 +21,55 @@ class NavBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = isSelected ? Colors.white : null;
+    final color = isSelected ? context.colorPalette.green1C9 : context.colorPalette.grey81;
     return Expanded(
       child: GestureDetector(
         onTap: onTap,
         child: Material(
           color: Colors.transparent,
           child: Center(
-            child: AnimatedScale(
-              scale: isSelected ? 1.2 : 1.0,
-              duration: const Duration(milliseconds: 200),
-              curve: Curves.easeInOut,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Expanded(
-                    child: CustomSvg(
-                      icon,
-                      // height: 25,
-                      width: width,
-                      color: Colors.red,
-                    ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if(isSelected)
+                FadeInDown(
+                  from: 10,
+                  animate: true,
+                  curve: Curves.linear,
+                  duration: const Duration(milliseconds: 400),
+                  child: Divider(
+                    color: context.colorPalette.green37B,
+                    endIndent: 10,
+                    thickness: 2,
+                    indent: 10,
                   ),
-                  Expanded(
-                    child: Text(
-                      title,
-                      style: context.textTheme.labelSmall!.copyWith(
-                        color: color,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
+                ) 
+                else const Divider(
+                    color: Colors.transparent,
+                    endIndent: 10,
+                    thickness: 2,
+                    indent: 10,
                   ),
-                ],
-              ),
+                Expanded(
+                  child: CustomSvg(
+                    icon,
+                    // height: 25,
+                    width: width,
+                    color: Colors.red,
+                  ),
+                ),
+                Expanded(
+                  child: Text(
+                    title,
+                    style: context.textTheme.labelSmall!.copyWith(
+                      color: color,
+                      fontWeight: FontWeight.w600,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
             ),
           ),
         ),

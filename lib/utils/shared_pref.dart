@@ -30,7 +30,7 @@ class MySharedPreferences {
     _sharedPreferences.setString('user', jsonEncode(value?.toJson()));
   }
 
-  static String get language => _sharedPreferences.getString('language') ?? LanguageEnum.english;
+  static String get language => _sharedPreferences.getString('language') ?? LanguageEnum.arabic;
   static set language(String value) => _sharedPreferences.setString('language', value);
 
   static String get accessToken => _sharedPreferences.getString('accessToken') ?? "";

@@ -6,6 +6,7 @@ import 'package:eye_muslim/screens/quran/quran_screen.dart';
 import 'package:eye_muslim/screens/times/times_screen.dart';
 import 'package:eye_muslim/utils/base_extensions.dart';
 import 'package:eye_muslim/utils/my_icons.dart';
+import 'package:eye_muslim/utils/my_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppNavBar extends StatefulWidget {
@@ -89,9 +90,13 @@ class _AppNavBarState extends State<AppNavBar> {
         width: context.mediaQuery.width,
         decoration: BoxDecoration(
           color: Colors.white,
+          borderRadius: const BorderRadius.only(
+            topLeft: Radius.circular(MyTheme.radiusS),
+            topRight: Radius.circular(MyTheme.radiusS),
+          ),
           boxShadow: [
             BoxShadow(
-              color: context.colorPalette.button,
+              color: context.colorPalette.grey81,
               offset: const Offset(0.0, 1.0),
               blurRadius: 3.0,
             ),
