@@ -5,6 +5,7 @@ import 'dart:io';
 
 import 'package:eye_muslim/providers/app_provider.dart';
 import 'package:eye_muslim/screens/base/app_nav_bar.dart';
+import 'package:eye_muslim/screens/home/widgets/time_circle.dart';
 import 'package:eye_muslim/utils/enums.dart';
 import 'package:eye_muslim/utils/my_theme.dart';
 import 'package:eye_muslim/utils/shared_pref.dart';
@@ -45,6 +46,7 @@ Future<void> main() async {
   );
   //unawaited(AppProvider.getCountryCode());
   await MySharedPreferences.init();
+  await TimeCircle.loadImage();
   // FlutterBranchSdk.validateSDKIntegration();
   //MySharedPreferences.clearStorage();
   // MySharedPreferences.isPassedIntro = false;

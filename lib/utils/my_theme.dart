@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 const kEditorBottomPadding = 16.0;
 const kProductBubbleHeight = 70.0;
 const kBarLeadingWith = 250.0;
-const kBarCollapsedHeight = 220.0;
+const kBarCollapsedHeight = 300.0;
 
 class MyTheme {
   static const Color primaryLightColor = Color(0xFF1A73E8);
