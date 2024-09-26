@@ -1,6 +1,10 @@
-import 'package:eye_muslim/screens/home/widgets/time_circle.dart';
+import 'package:eye_muslim/screens/home/widgets/conclusion_progress.dart';
+import 'package:eye_muslim/screens/home/widgets/hadith_card.dart';
 import 'package:eye_muslim/screens/home/widgets/prayer_question.dart';
+import 'package:eye_muslim/screens/home/widgets/presentation_card.dart';
+import 'package:eye_muslim/screens/home/widgets/reading_dhikr.dart';
 import 'package:eye_muslim/screens/home/widgets/subscription_without_ads.dart';
+import 'package:eye_muslim/screens/home/widgets/time_circle.dart';
 import 'package:eye_muslim/utils/base_extensions.dart';
 import 'package:eye_muslim/utils/my_icons.dart';
 import 'package:eye_muslim/utils/my_images.dart';
@@ -8,7 +12,6 @@ import 'package:eye_muslim/utils/my_theme.dart';
 import 'package:eye_muslim/widgets/custom_svg.dart';
 import 'package:eye_muslim/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -47,12 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-    ]);
   }
 
   @override
@@ -61,31 +58,40 @@ class _HomeScreenState extends State<HomeScreen> {
       slivers: [
         SliverAppBar(
           pinned: true,
+          centerTitle: true,
+          leading: IconButton(
+            onPressed: () {},
+            icon: const CustomSvg(MyIcons.menu),
+          ),
+          title: Container(
+            height: 28,
+            width: 200,
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.only(bottom: 15),
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: context.colorPalette.black1D50,
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: CustomText(
+              "مكة المكرمة - 24 محرم  1446هـ ",
+              color: context.colorPalette.white,
+              fontSize: 12,
+            ),
+          ),
           collapsedHeight: kBarCollapsedHeight,
           flexibleSpace: Container(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(MyImages.noon),
-                fit: BoxFit.cover,
+                image: AssetImage(MyImages.evening),
+                fit: BoxFit.fill,
               ),
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+            child: const Column(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                CustomPaint(
-                  painter: HalfCirclePainter(conditionMet: false),
-                  child: const SizedBox(
-                    width: double.infinity,
-                    height: 250,
-                    child: Center(
-                        child: Column(
-                      children: [
-                        Text("data"),
-                      ],
-                    )),
-                  ),
-                )
+                TimeCircle(),
               ],
             ),
           ),
@@ -108,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         SliverPadding(
-          padding: const EdgeInsetsDirectional.only(top: 5, start: 15, end: 15),
+          padding: const EdgeInsetsDirectional.only(top: 5, start: 15, end: 15, bottom: 10),
           sliver: SliverGrid(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: (MediaQuery.of(context).size.width / 150).toInt(),
@@ -119,33 +125,24 @@ class _HomeScreenState extends State<HomeScreen> {
             delegate: SliverChildBuilderDelegate(
               childCount: _presentationIcon.length,
               (context, index) {
-                return Container(
-                  height: 50,
-                  width: 10,
-                  padding: const EdgeInsets.symmetric(horizontal: 5),
-                  decoration: BoxDecoration(
-                    color: context.colorPalette.greyEEE,
-                    borderRadius:
-                        BorderRadius.circular(MyTheme.radiusSecondary),
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                        child: CustomSvg(_presentationIcon[index]),
-                      ),
-                      Expanded(
-                        child: CustomText(
-                          _getPresentationText()[index],
-                          color: context.colorPalette.green215,
-                          textAlign: TextAlign.center,
-                          fontSize: 12,
-                        ),
-                      ),
-                    ],
-                  ),
+                return PresentationCard(
+                  icon: _presentationIcon[index],
+                  title: _getPresentationText()[index],
                 );
               },
+            ),
+          ),
+        ),
+        const SliverPadding(
+          padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+          sliver: SliverToBoxAdapter(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ReadingDhikr(),
+                ConclusionProgress(),
+                HadithCard(),
+              ],
             ),
           ),
         ),

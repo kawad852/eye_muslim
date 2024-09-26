@@ -16,6 +16,7 @@ class ColorPalette {
 
   //black
   Color get black292 => const Color(0xFF292D32);
+  Color get black1D50 => const Color(0x801D1D1D);
 
   //green
   Color get green1C9 => const Color(0xFF1C9924);
@@ -29,6 +30,8 @@ class ColorPalette {
   Color get greyECE => const Color(0xFFECECEC);
   Color get greyC7D => const Color(0xFFC7D5C2);
   Color get greyEEE => const Color(0xFFEEEEEE);
+  Color get greyD9D => const Color(0xFFD9D9D9);
+
 
 
 

@@ -10,5 +10,6 @@ class MyImages {
   static const String evening = '${_path}evening.png';
   static const String sun = '${_path}sun.png';
   static const String moon = '${_path}moon.png';
-
+  static const String dhikr = '${_path}dhikr.png';
+  static const String dhikrBackground = '${_path}dhikr_background.png';
 }

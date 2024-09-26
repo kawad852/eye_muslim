@@ -10,4 +10,11 @@ class MyIcons {
   static const String ramdanMonth = '${_path}ramdan-month.svg';
   static const String remembrances = '${_path}remembrances.svg';
   static const String rosary = '${_path}rosary.svg';
+  static const String fajr = '${_path}fajr.svg';
+  static const String hsr = '${_path}hsr.svg';
+  static const String isha = '${_path}isha.svg';
+  static const String noon = '${_path}noon.svg';
+  static const String maghrib = '${_path}maghrib.svg';
+  static const String menu = '${_path}menu.svg';
+  static const String send = '${_path}send.svg';
 }

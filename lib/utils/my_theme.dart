@@ -57,7 +57,7 @@ class MyTheme {
       fontFamily: fontFamily,
       colorScheme: colorScheme,
       appBarTheme: AppBarTheme(
-        color: colorScheme.background,
+        color: colorScheme.surface,
       ),
       listTileTheme: ListTileThemeData(
         shape: RoundedRectangleBorder(
@@ -77,8 +77,8 @@ class MyTheme {
         ),
       ),
       bottomAppBarTheme: BottomAppBarTheme(
-        surfaceTintColor: colorScheme.background,
-        color: colorScheme.background,
+        surfaceTintColor: colorScheme.surface,
+        color: colorScheme.surface,
         elevation: 0,
       ),
       inputDecorationTheme: inputDecorationTheme(context, colorScheme),

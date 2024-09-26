@@ -47,7 +47,7 @@
   "useAppWithoutAds":"Would you like to use the application without ads?subscribe now for only ${value} for a month and enjoy using the application without ads",
   "subscriptionFor":"Subscription for only ${value}",
   "wePresentToYou":"We present to you",
-  "remembrancesAndSupplications":"Remembrances and supplications",
+  "remembrancesAndSupplications":"Dhikr and supplications",
   "qiblaDirection":"Qibla direction",
   "rosary":"Rosary",
   "namesOfGod":"Names of God",
@@ -55,5 +55,11 @@
   "hijriCalendar":"Hijri calendar",
   "ramadanMonth":"Ramadan month",
   "interpretationQuran":"Interpretation Quran",
-  "moreComingSoon":"More coming soon"
+  "moreComingSoon":"More coming soon",
+  "willStartDuring":"It will start in {hours} hours and {minutes} minutes",
+  "readingdhikr":"Reading dhikr",
+  "progressStatus":"Progress status",
+  "currentConclusion":"Current conclusion",
+  "page":"Page : ",
+  "days":"Days"
 }

@@ -55,5 +55,11 @@
   "hijriCalendar":"التقويم الهجري",
   "ramadanMonth":"شهر رمضان",
   "interpretationQuran":"تفسير القرآن",
-  "moreComingSoon":"قريبا المزيد"
+  "moreComingSoon":"قريبا المزيد",
+  "willStartDuring":"سيبدأ بعد {hours} ساعات و {minutes} دقائق",
+  "readingdhikr":"قراءة الأذكار",
+  "progressStatus":"حالة التقدم",
+  "currentConclusion":"الختمة الحالية",
+  "page":"الصفحة : ",
+  "days":"أيام"
 }
