@@ -61,5 +61,17 @@
   "progressStatus":"حالة التقدم",
   "currentConclusion":"الختمة الحالية",
   "page":"الصفحة : ",
-  "days":"أيام"
+  "days":"أيام",
+  "alQuranAlKareem":"القرآن الكريم",
+  "createNewConclusion":"انشاء ختمة جديدة",
+  "levelOfProgress":"مستوى التقدم",
+  "searchSurah":"ابحث عن اسم السورة",
+  "surah":"سورة",
+  "verses":"آية",
+  "part":"الجزء",
+  "enterConclusionName":"ادخل اسم الختمة",
+  "numberOfDays":"عدد الأيام : ",
+  "numberOfParts":"عدد الأجزاء : ",
+  "createConclusion":"انشاء الختمة",
+  "exit":"الغاء"
 }

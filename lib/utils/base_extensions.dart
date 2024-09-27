@@ -2,6 +2,7 @@ import 'package:eye_muslim/alerts/loading/app_loading_indicators.dart';
 import 'package:eye_muslim/models/countries_model.dart';
 import 'package:eye_muslim/providers/app_provider.dart';
 import 'package:eye_muslim/utils/app_constants.dart';
+import 'package:eye_muslim/utils/app_routes.dart';
 import 'package:eye_muslim/utils/color_palette.dart';
 import 'package:eye_muslim/utils/countries.dart';
 import 'package:eye_muslim/utils/enums.dart';
@@ -48,4 +49,55 @@ extension CommonExtensions on BuildContext {
       MaterialPageRoute(builder: builder, fullscreenDialog: fullscreenDialog),
     ).then((value) => value);
   }
+}
+
+extension NavigatorExtension on BuildContext {
+  Future<dynamic> push(Widget screen) async {
+    final routeName = AppRoutes.names[screen.runtimeType];
+    final value = await Navigator.push(
+      this,
+      MaterialPageRoute(
+        builder: (context) {
+          return screen;
+        },
+        settings: RouteSettings(name: routeName),
+      ),
+    );
+    return value;
+  }
+
+  void pushReplacement(
+    Widget screen, {
+    Function(dynamic value)? then,
+  }) async {
+    final routeName = AppRoutes.names[screen.runtimeType];
+    final value = await Navigator.pushReplacement(
+      this,
+      MaterialPageRoute(
+        builder: (context) {
+          return screen;
+        },
+        settings: RouteSettings(name: routeName),
+      ),
+    );
+    if (then != null) {
+      then(value);
+    }
+  }
+
+  Future<void> pushAndRemoveUntil(Widget screen) async{
+    final routeName = AppRoutes.names[screen.runtimeType];
+    Navigator.pushAndRemoveUntil(
+      this,
+      MaterialPageRoute(
+        builder: (context) {
+          return screen;
+        },
+        settings: RouteSettings(name: routeName),
+      ),
+      (route) => false,
+    );
+  }
+
+  void pop([value]) => Navigator.pop(this, value);
 }

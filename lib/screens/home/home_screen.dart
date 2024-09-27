@@ -63,6 +63,12 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () {},
             icon: const CustomSvg(MyIcons.menu),
           ),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const CustomSvg(MyIcons.notification),
+            ),
+          ],
           title: Container(
             height: 28,
             width: 200,

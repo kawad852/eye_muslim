@@ -17,4 +17,11 @@ class MyIcons {
   static const String maghrib = '${_path}maghrib.svg';
   static const String menu = '${_path}menu.svg';
   static const String send = '${_path}send.svg';
+  static const String notification = '${_path}notification.svg';
+  static const String audio = '${_path}audio.svg';
+  static const String bookMark = '${_path}book-mark.svg';
+  static const String search = '${_path}search.svg';
+  static const String edit = '${_path}edit.svg';
+  static const String plus = '${_path}plus.svg';
+  static const String minus = '${_path}minus.svg';
 }

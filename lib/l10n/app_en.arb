@@ -61,5 +61,17 @@
   "progressStatus":"Progress status",
   "currentConclusion":"Current conclusion",
   "page":"Page : ",
-  "days":"Days"
+  "days":"Days",
+  "alQuranAlKareem":"AlQuran AlKareem",
+  "createNewConclusion":"Create a new conclusion",
+  "levelOfProgress":"Level of progress",
+  "searchSurah":"Search for the name of the surah",
+  "surah":"Surah",
+  "verses":"Verses",
+  "part":"Part",
+  "enterConclusionName":"Enter the conclusion name",
+  "numberOfDays":"Number of days : ",
+  "numberOfParts":"Number of parts : ",
+  "createConclusion":"Create Conclusion",
+  "exit":"Exit"
 }
