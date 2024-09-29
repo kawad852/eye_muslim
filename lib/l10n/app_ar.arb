@@ -73,5 +73,9 @@
   "numberOfDays":"عدد الأيام : ",
   "numberOfParts":"عدد الأجزاء : ",
   "createConclusion":"انشاء الختمة",
-  "exit":"الغاء"
+  "exit":"الغاء",
+  "azan":"الأذان",
+  "prayerAndAzanTimes":"مواقيت الصلاة والأذان حسب منطقتك الزمنية",
+  "milad":"م",
+  "hijri":"هـ"
 }

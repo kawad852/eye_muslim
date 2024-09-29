@@ -4,6 +4,8 @@ import 'package:eye_muslim/screens/quran/widgets/surah_card.dart';
 import 'package:eye_muslim/utils/base_extensions.dart';
 import 'package:eye_muslim/utils/my_icons.dart';
 import 'package:eye_muslim/widgets/base_editor.dart';
+import 'package:eye_muslim/widgets/custom_menu.dart';
+import 'package:eye_muslim/widgets/custom_notification.dart';
 import 'package:eye_muslim/widgets/custom_svg.dart';
 import 'package:eye_muslim/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
@@ -23,13 +25,7 @@ class _QuranScreenState extends State<QuranScreen> {
         SliverAppBar(
           pinned: true,
           centerTitle: true,
-          leading: IconButton(
-            onPressed: () {},
-            icon: CustomSvg(
-              MyIcons.menu,
-              color: context.colorPalette.green215,
-            ),
-          ),
+          leading: const CustomMenu(),
           title: CustomText(
             context.appLocalization.alQuranAlKareem,
             color: context.colorPalette.green215,
@@ -38,10 +34,7 @@ class _QuranScreenState extends State<QuranScreen> {
           actions: [
             IconButton(
               onPressed: () {},
-              icon: CustomSvg(
-                MyIcons.notification,
-                color: context.colorPalette.green215,
-              ),
+              icon: const CustomNotification(),
             ),
           ],
         ),

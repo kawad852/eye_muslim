@@ -26,6 +26,8 @@ class ColorPalette {
   Color get green2D8 => const Color(0xFF2D8C2E);
   Color get green577 => const Color(0xFF577F5B);
   Color get green00A => const Color(0xFF00A01A);
+  Color get green008 => const Color(0xFF008C16);
+
 
  
 

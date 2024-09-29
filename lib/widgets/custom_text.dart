@@ -9,6 +9,7 @@ class CustomText extends StatelessWidget {
   final TextOverflow? overFlow;
   final int? maxLines;
   final TextAlign? textAlign;
+  final TextDirection? textDirection;
   const CustomText(
     this.data, {
     super.key,
@@ -18,6 +19,7 @@ class CustomText extends StatelessWidget {
     this.overFlow,
     this.maxLines,
     this.textAlign,
+    this.textDirection,
   });
 
   @override
@@ -27,6 +29,7 @@ class CustomText extends StatelessWidget {
       overflow: overFlow,
       maxLines: maxLines,
       textAlign: textAlign,
+      textDirection: textDirection,
       style: TextStyle(
         color: color ?? context.colorPalette.black,
         fontSize: fontSize,

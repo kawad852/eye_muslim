@@ -73,5 +73,9 @@
   "numberOfDays":"Number of days : ",
   "numberOfParts":"Number of parts : ",
   "createConclusion":"Create Conclusion",
-  "exit":"Exit"
+  "exit":"Exit",
+  "azan":"Azan",
+  "prayerAndAzanTimes":"Prayer and Azan times according to your time zone",
+  "milad":"AD",
+  "hijri":"H"
 }

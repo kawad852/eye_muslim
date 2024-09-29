@@ -9,7 +9,8 @@ import 'package:eye_muslim/utils/base_extensions.dart';
 import 'package:eye_muslim/utils/my_icons.dart';
 import 'package:eye_muslim/utils/my_images.dart';
 import 'package:eye_muslim/utils/my_theme.dart';
-import 'package:eye_muslim/widgets/custom_svg.dart';
+import 'package:eye_muslim/widgets/custom_menu.dart';
+import 'package:eye_muslim/widgets/custom_notification.dart';
 import 'package:eye_muslim/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 
@@ -59,15 +60,10 @@ class _HomeScreenState extends State<HomeScreen> {
         SliverAppBar(
           pinned: true,
           centerTitle: true,
-          leading: IconButton(
-            onPressed: () {},
-            icon: const CustomSvg(MyIcons.menu),
-          ),
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const CustomSvg(MyIcons.notification),
-            ),
+          leading: const CustomMenu(isHome: true),
+          actions: const [
+            
+            CustomNotification(isHome: true),
           ],
           title: Container(
             height: 28,
@@ -120,7 +116,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         SliverPadding(
-          padding: const EdgeInsetsDirectional.only(top: 5, start: 15, end: 15, bottom: 10),
+          padding: const EdgeInsetsDirectional.only(
+              top: 5, start: 15, end: 15, bottom: 10),
           sliver: SliverGrid(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: (MediaQuery.of(context).size.width / 150).toInt(),
