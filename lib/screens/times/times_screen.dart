@@ -1,9 +1,11 @@
 import 'package:eye_muslim/screens/times/widgets/change_location_bubble.dart';
 import 'package:eye_muslim/screens/times/widgets/time_now_info.dart';
+import 'package:eye_muslim/screens/times/widgets/week_calander.dart';
 import 'package:eye_muslim/utils/base_extensions.dart';
 import 'package:eye_muslim/widgets/custom_menu.dart';
 import 'package:eye_muslim/widgets/custom_notification.dart';
 import 'package:eye_muslim/widgets/custom_text.dart';
+import 'package:eye_muslim/widgets/stretch_button.dart';
 import 'package:flutter/material.dart';
 
 class TimesScreen extends StatefulWidget {
@@ -14,6 +16,11 @@ class TimesScreen extends StatefulWidget {
 }
 
 class _TimesScreenState extends State<TimesScreen> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
@@ -34,13 +41,33 @@ class _TimesScreenState extends State<TimesScreen> {
             ),
           ],
         ),
-        const SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 15),
+        SliverPadding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
           sliver: SliverToBoxAdapter(
             child: Column(
               children: [
-                ChangeLocationBubble(),
-                TimeNowInfo(),
+                const ChangeLocationBubble(),
+                const TimeNowInfo(),
+                const WeekCalander(),
+                StretchedButton(
+                  onPressed: () {},
+                  margin: const EdgeInsets.symmetric(vertical: 10),
+                  backgroundColor: context.colorPalette.green2D8,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(
+                        Icons.arrow_back_ios,
+                        size: 15,
+                      ),
+                      CustomText(
+                        context.appLocalization.prayerSchedule,
+                        color: context.colorPalette.white,
+                        fontSize: 16,
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

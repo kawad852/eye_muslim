@@ -77,5 +77,21 @@
   "azan":"Azan",
   "prayerAndAzanTimes":"Prayer and Azan times according to your time zone",
   "milad":"AD",
-  "hijri":"H"
+  "hijri":"H",
+  "daysOfWeek":"Days of week",
+  "sundy":"Sun",
+  "monday":"Mon",
+  "tuesday":"Tues",
+  "wednesday":"Wed",
+  "thursday":"Thurs",
+  "friday":"Fri",
+  "saturday":"Sat",
+  "fajrPrayer":"Fajr prayer",
+  "noonPrayer":"Noon prayer",
+  "asrPrayer":"Asr prayer",
+  "maghribPrayer":"Maghrib prayer",
+  "ishaPrayer":"Isha prayer",
+  "sunrise":"Sunrise",
+  "noteForAzanAlert":"You can stop or activate Azan alerts for each prayer separately By activating the bell button next to each prayer",
+  "prayerSchedule":"Prayer schedule"
 }

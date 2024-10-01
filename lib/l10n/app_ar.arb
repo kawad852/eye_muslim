@@ -77,5 +77,21 @@
   "azan":"الأذان",
   "prayerAndAzanTimes":"مواقيت الصلاة والأذان حسب منطقتك الزمنية",
   "milad":"م",
-  "hijri":"هـ"
+  "hijri":"هـ",
+  "daysOfWeek":"أيام الأسبوع",
+  "sundy":"الأحد",
+  "monday":"الاثنين",
+  "tuesday":"الثلاثاء",
+  "wednesday":"الأربعاء",
+  "thursday":"الخميس",
+  "friday":"الجمعة",
+  "saturday":"السبت",
+  "fajrPrayer":"صلاة الفجر",
+  "noonPrayer":"صلاة الظهر",
+  "asrPrayer":"صلاة العصر",
+  "maghribPrayer":"صلاة المغرب",
+  "ishaPrayer":"صلاة العشاء",
+  "sunrise":"الشروق",
+  "noteForAzanAlert":"يمكنك ايقاف تنبيهات الأذان او تفعيلها لكل صلاة على حدى من خلال تفعيل زر الجرس بجانب كل صلاة",
+  "prayerSchedule":"سجل الصلوات"
 }

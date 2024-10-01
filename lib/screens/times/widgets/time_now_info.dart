@@ -48,8 +48,7 @@ class TimeNowInfo extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: CustomText(
-            intl.DateFormat("EEEE", context.languageCode)
-                .format(DateTime.now()),
+            intl.DateFormat("EEEE", context.languageCode).format(DateTime.now()),
             fontSize: 20,
           ),
         ),

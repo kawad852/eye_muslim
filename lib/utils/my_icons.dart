@@ -25,4 +25,6 @@ class MyIcons {
   static const String plus = '${_path}plus.svg';
   static const String minus = '${_path}minus.svg';
   static const String refresh = '${_path}refresh.svg';
+  static const String azanAlert = '${_path}azan_alert.svg';
+  static const String setting = '${_path}setting.svg';
 }
