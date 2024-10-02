@@ -93,5 +93,11 @@
   "ishaPrayer":"صلاة العشاء",
   "sunrise":"الشروق",
   "noteForAzanAlert":"يمكنك ايقاف تنبيهات الأذان او تفعيلها لكل صلاة على حدى من خلال تفعيل زر الجرس بجانب كل صلاة",
-  "prayerSchedule":"سجل الصلوات"
+  "prayerSchedule":"سجل الصلوات",
+  "turnOnAzanAlert":"تشغيل تنبيه الأذان",
+  "modifyingTheAzan":"تعديل الأذان",
+  "reset":"اعادة تعيين",
+  "warningBeforeAzan":"تنبيه قبل الأذان",
+  "minutes":"دقائق",
+  "soundAzan":"صوت الأذان"
 }

@@ -93,5 +93,11 @@
   "ishaPrayer":"Isha prayer",
   "sunrise":"Sunrise",
   "noteForAzanAlert":"You can stop or activate Azan alerts for each prayer separately By activating the bell button next to each prayer",
-  "prayerSchedule":"Prayer schedule"
+  "prayerSchedule":"Prayer schedule",
+  "turnOnAzanAlert":"Turn on the Azan alert",
+  "modifyingTheAzan":"Modifying the Azan",
+  "reset":"Reset",
+  "warningBeforeAzan":"Warning before the ِAzan",
+  "minutes":"Minutes",
+  "soundAzan":"The sound of the Azan"
 }

@@ -27,4 +27,7 @@ class MyIcons {
   static const String refresh = '${_path}refresh.svg';
   static const String azanAlert = '${_path}azan_alert.svg';
   static const String setting = '${_path}setting.svg';
+  static const String arrowBack = '${_path}arrow_back.svg';
+  static const String reset = '${_path}reset.svg';
+  static const String arrowDown = '${_path}arrow_down.svg';
 }

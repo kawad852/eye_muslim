@@ -1,3 +1,4 @@
+import 'package:eye_muslim/screens/times/azan_configuration_screen.dart';
 import 'package:eye_muslim/utils/base_extensions.dart';
 import 'package:eye_muslim/utils/my_icons.dart';
 import 'package:eye_muslim/utils/my_theme.dart';
@@ -59,7 +60,9 @@ class PrayerTime extends StatelessWidget {
                 icon: const CustomSvg(MyIcons.azanAlert),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.push(const AzanConfigurationScreen());
+                },
                 icon: const CustomSvg(MyIcons.setting),
               ),
             ],
