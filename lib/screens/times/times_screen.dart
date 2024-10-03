@@ -1,3 +1,4 @@
+import 'package:eye_muslim/screens/my_prayers/my_prayers_screen.dart';
 import 'package:eye_muslim/screens/times/widgets/change_location_bubble.dart';
 import 'package:eye_muslim/screens/times/widgets/time_now_info.dart';
 import 'package:eye_muslim/screens/times/widgets/week_calander.dart';
@@ -50,7 +51,9 @@ class _TimesScreenState extends State<TimesScreen> {
                 const TimeNowInfo(),
                 const WeekCalander(),
                 StretchedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push(const MyPrayersScreen());
+                  },
                   margin: const EdgeInsets.symmetric(vertical: 10),
                   backgroundColor: context.colorPalette.green2D8,
                   child: Row(

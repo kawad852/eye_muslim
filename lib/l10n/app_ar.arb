@@ -99,5 +99,11 @@
   "reset":"اعادة تعيين",
   "warningBeforeAzan":"تنبيه قبل الأذان",
   "minutes":"دقائق",
-  "soundAzan":"صوت الأذان"
+  "soundAzan":"صوت الأذان",
+  "myPrayers":"صلواتي",
+  "totalPrayer":"اجمالي الصلاة",
+  "prayerCompleted":"الصلاة التي تم انجازها",
+  "missedPrayer":"الصلاة الفائتة",
+  "myPrayerToday":"صلاتي لليوم",
+  "didPray":"هل صليت؟"
 }

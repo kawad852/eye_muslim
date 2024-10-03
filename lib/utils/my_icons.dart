@@ -30,4 +30,5 @@ class MyIcons {
   static const String arrowBack = '${_path}arrow_back.svg';
   static const String reset = '${_path}reset.svg';
   static const String arrowDown = '${_path}arrow_down.svg';
+  static const String iconTable = '${_path}icon_table.svg';
 }

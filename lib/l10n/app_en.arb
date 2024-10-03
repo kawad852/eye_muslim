@@ -99,5 +99,11 @@
   "reset":"Reset",
   "warningBeforeAzan":"Warning before the ِAzan",
   "minutes":"Minutes",
-  "soundAzan":"The sound of the Azan"
+  "soundAzan":"The sound of the Azan",
+  "myPrayers":"My prayers",
+  "totalPrayer":"Total Prayer",
+  "prayerCompleted":"Prayer completed",
+  "missedPrayer":"Missed prayer",
+  "myPrayerToday":"My prayer for today",
+  "didPray":"Did you pray?"
 }

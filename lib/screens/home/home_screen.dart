@@ -5,6 +5,7 @@ import 'package:eye_muslim/screens/home/widgets/presentation_card.dart';
 import 'package:eye_muslim/screens/home/widgets/reading_dhikr.dart';
 import 'package:eye_muslim/screens/home/widgets/subscription_without_ads.dart';
 import 'package:eye_muslim/screens/home/widgets/time_circle.dart';
+import 'package:eye_muslim/screens/qibla/qibla_screen.dart';
 import 'package:eye_muslim/utils/base_extensions.dart';
 import 'package:eye_muslim/utils/my_icons.dart';
 import 'package:eye_muslim/utils/my_images.dart';
@@ -129,6 +130,11 @@ class _HomeScreenState extends State<HomeScreen> {
               childCount: _presentationIcon.length,
               (context, index) {
                 return PresentationCard(
+                  onTap: () {
+                    if (index == 1) {
+                      context.push(const QiblaScreen());
+                    }
+                  },
                   icon: _presentationIcon[index],
                   title: _getPresentationText()[index],
                 );
