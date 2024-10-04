@@ -105,5 +105,9 @@
   "prayerCompleted":"الصلاة التي تم انجازها",
   "missedPrayer":"الصلاة الفائتة",
   "myPrayerToday":"صلاتي لليوم",
-  "didPray":"هل صليت؟"
+  "didPray":"هل صليت؟",
+  "locationServiceDenied":"تم رفض إذن خدمة الموقع",
+  "pleaseEnableLocation":"الرجاء تفعيل خدمة الموقع",
+  "thisDeviceNotSupportCompass":"عذرا, هذا الجهاز لا يدعم نظام البوصلة",
+  "fromTheNorth":"من الشمال"
 }

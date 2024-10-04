@@ -105,5 +105,9 @@
   "prayerCompleted":"Prayer completed",
   "missedPrayer":"Missed prayer",
   "myPrayerToday":"My prayer for today",
-  "didPray":"Did you pray?"
+  "didPray":"Did you pray?",
+  "locationServiceDenied":"Location service permission denied",
+  "pleaseEnableLocation":"Please enable Location service",
+  "thisDeviceNotSupportCompass":"Sorry, this device does not support the compass system",
+  "fromTheNorth":"From the north"
 }
